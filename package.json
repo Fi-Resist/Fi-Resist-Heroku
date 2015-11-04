@@ -1,0 +1,31 @@
+{
+  "name": "FiResistComponents",
+  "version": "1.0.0",
+  "description": "server & component for FiResist",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test-server && npm run test-client",
+    "test-server": "mocha -R spec ./server/test/ --recursive",
+    "test-client": "karma start --single-run",
+    "install-client": "node install_client.js",
+  },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+	"express": "4.10.2",
+	"lodash": "3.10.1",
+	"socket.io": "1.3.7"
+    },
+    "devDependencies": {
+	"bower": "1.5.3",
+	"chai": "3.3.0",
+	"karma": "0.13.10",
+	"karma-chai": "0.1.0",
+	"karma-mocha": "0.2.0",
+	"karma-ng-html2js-preprocessor": "0.2.0",
+	"karma-phantomjs-launcher": "0.2.1",
+	"mocha": "2.3.3",
+	"proxyquire": "1.7.3",
+	"sinon": "1.17.1"
+    }
+}
